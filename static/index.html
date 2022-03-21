@@ -1,17 +1,31 @@
 <html>
   <head>
     <style>
-      table,
-      th,
+      table {
+        border-spacing: 0px;
+        table-layout: fixed;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+      }
       td {
-        border: 1px solid black;
+        border: 1px solid #666;
+      }
+      .blink_me {
+        animation: blinker 0.5s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
       }
     </style>
     <title>Meats All</title>
   </head>
 
   <body>
-    <h1>Meats All</h1>
+    <h1 class="blink_me">Meats All</h1>
     <h2>A food blog for Software Engineers</h2>
 
     <h3>Rating philosophy</h3>
@@ -42,29 +56,37 @@
       </li>
     </ul>
 
+    <hr />
+    <br />
+    <br />
+    <br />
+
     <table>
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Logan</th>
-          <th>Jacob</th>
+          <th class="blink_me" style="width: 5%">Date</th>
+          <th class="blink_me">Logan</th>
+          <th class="blink_me">Jacob</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>2022-03-21</td>
-            <td>4.0 - A delight for the senses! The Sichuan chicken was delicious and the chili oil really brought out
-            the best flavors in the dish. For sides, we had delectable broccoli and green beans with a helping of
-            jasmine rice on the side. This easily exceeded my expectations and I found myself longing for more by the
-            end. For dessert, we had churros and chocolate - quite a departure from the "Sichuan" theme of the main
-            course, and honestly, it's my biggest point of criticism: the chocolate itself was a bit overly sweet, and
-            the lingering hint of chili oil from the chicken resulted in me questioning the combination. Nevertheless,
-            such a strong main course led me to keeping my initial rating of a 4.0 because I would gladly eat this
-            again. Kudos to the chefs!</td>
           <td>
-            3.0 - chicken was dry but flavor was pretty good and sides were
-            solid.
+            4.0 - A delight for the senses! The Sichuan chicken was delicious
+            and the chili oil really brought out the best flavors in the dish.
+            For sides, we had delectable broccoli and green beans with a helping
+            of jasmine rice on the side. This easily exceeded my expectations
+            and I found myself longing for more by the end. For dessert, we had
+            churros and chocolate - quite a departure from the "Sichuan" theme
+            of the main course, and honestly, it's my biggest point of
+            criticism: the chocolate itself was a bit overly sweet, and the
+            lingering hint of chili oil from the chicken resulted in me
+            questioning the combination. Nevertheless, such a strong main course
+            led me to keeping my initial rating of a 4.0 because I would gladly
+            eat this again. Kudos to the chefs!
           </td>
+          <td>4.0 - it was good.</td>
         </tr>
         <tr>
           <td>2022-03-17</td>
